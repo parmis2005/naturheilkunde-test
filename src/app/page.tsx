@@ -1,65 +1,344 @@
 import Image from "next/image";
+import Link from "next/link";
+import CTASection from "@/components/CTASection";
+import MapEmbed from "@/components/MapEmbed";
+import { practice, services } from "@/lib/site-data";
 
-export default function Home() {
+const benefits = [
+  {
+    title: "Natürlich",
+    text: "Sanfte, naturheilkundliche Verfahren ohne Nebenwirkungen anstelle von Medikamenten.",
+  },
+  {
+    title: "Ganzheitlich",
+    text: "Ich betrachte nicht nur das Symptom, sondern den Menschen als Ganzes.",
+  },
+  {
+    title: "Direkt beim ersten Termin",
+    text: "In der Regel beginnt die Behandlung bereits beim ersten Besuch in der Praxis.",
+  },
+  {
+    title: "Zentral in Köln",
+    text: "Mitten in der Kölner Innenstadt, nur wenige Gehminuten vom Appellhofplatz entfernt.",
+  },
+];
+
+const firstAppointmentDocs = [
+  "Aktuelle Medikamentenpläne mit Dosierung",
+  "Laborwerte",
+  "Facharztberichte",
+  "Röntgenbilder",
+  "MRT-Aufnahmen",
+  "CT-Aufnahmen",
+];
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <>
+      {/* Hero */}
+      <section className="relative overflow-hidden bg-primary-800">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/osteo_3.jpg"
+            alt="Michael Meschede, Heilpraktiker in Köln, in seiner Naturheilpraxis"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover opacity-35"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary-900 via-primary-800/85 to-primary-800/60" />
+        </div>
+        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8 lg:py-32">
+          <p className="mb-4 inline-block rounded-full bg-accent-500/90 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-white">
+            Neu in Köln und Hürth: BeckenBodenBoosta
+          </p>
+          <h1 className="max-w-3xl font-serif-heading text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
+            Natürliche Schmerzbehandlung in der Naturheilpraxis Meschede
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
+          <p className="mt-6 max-w-2xl text-lg text-primary-100">
+            Ich behandle Ihre Schmerzen natürlich, ganzheitlich und in der Regel bereits
+            direkt beim ersten Termin – mit Blutegeltherapie, Laserakupunktur, Osteopathie
+            und weiteren bewährten naturheilkundlichen Verfahren.
+          </p>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              href={practice.doctolibUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-accent-500 px-7 py-3.5 text-center text-sm font-semibold text-white shadow-sm transition hover:bg-accent-600"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              Termin bei Doctolib buchen
+            </a>
+            <Link
+              href="/kontakt"
+              className="rounded-full border border-white/40 px-7 py-3.5 text-center text-sm font-semibold text-white transition hover:bg-white/10"
             >
-              Learning
-            </a>{" "}
-            center.
+              Kontakt aufnehmen
+            </Link>
+          </div>
+          <p className="mt-8 text-sm text-primary-200">
+            {practice.addressFull} · {practice.hours}
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Benefits */}
+      <section className="border-b border-primary-100 bg-cream-50">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-14 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
+          {benefits.map((b) => (
+            <div key={b.title}>
+              <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-full bg-primary-100 text-primary-700 font-serif-heading text-lg">
+                {b.title.charAt(0)}
+              </div>
+              <h3 className="font-semibold text-primary-800">{b.title}</h3>
+              <p className="mt-2 text-sm text-primary-600">{b.text}</p>
+            </div>
+          ))}
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Featured gallery */}
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
+            <Image
+              src="/images/blutegel_2.jpg"
+              alt="Blutegeltherapie in der Naturheilpraxis Meschede"
+              fill
+              sizes="(min-width: 640px) 50vw, 100vw"
+              className="object-cover transition duration-500 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0" />
+            <span className="absolute bottom-4 left-4 rounded-full bg-white/90 px-4 py-1.5 text-sm font-semibold text-primary-800">
+              Blutegeltherapie
+            </span>
+          </div>
+          <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
+            <Image
+              src="/images/laser_1.jpg"
+              alt="Laserakupunktur in der Naturheilpraxis Meschede"
+              fill
+              sizes="(min-width: 640px) 50vw, 100vw"
+              className="object-cover transition duration-500 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0" />
+            <span className="absolute bottom-4 left-4 rounded-full bg-white/90 px-4 py-1.5 text-sm font-semibold text-primary-800">
+              Laserakupunktur
+            </span>
+          </div>
+        </div>
+      </section>
+
+      {/* About */}
+      <section className="bg-primary-50">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+            <Image
+              src="/images/osteo_2.jpg"
+              alt="Behandlung in der Naturheilpraxis Meschede in Köln"
+              fill
+              sizes="(min-width: 1024px) 45vw, 100vw"
+              className="object-cover"
+            />
+          </div>
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wide text-accent-600">
+              Über die Praxis
+            </p>
+            <h2 className="mt-2 font-serif-heading text-3xl font-semibold text-primary-800">
+              Michael Meschede – Heilpraktiker in Köln
+            </h2>
+            <p className="mt-4 text-primary-700">
+              Als Heilpraktiker in eigener Praxis mitten in Köln habe ich mich auf die
+              natürliche Behandlung von Schmerzen spezialisiert. Mein Behandlungsansatz
+              folgt drei Grundsätzen: Ich behandle Ihre Schmerzen natürlich, ganzheitlich
+              und – wann immer möglich – bereits direkt beim ersten Termin.
+            </p>
+            <p className="mt-4 text-primary-700">
+              Zu meinen Schwerpunkten zählen Blutegeltherapie, Laserakupunktur und
+              Lasertherapie, Osteopathie sowie die Magnetfeldtherapie. Darüber hinaus
+              begleite ich Sie bei der Raucherentwöhnung, beim Abnehmen und mit modernem
+              Beckenbodentraining über den BeckenBodenBoosta – am Standort in Köln und in
+              Hürth.
+            </p>
+            <Link
+              href="/kontakt"
+              className="mt-6 inline-flex items-center gap-2 font-semibold text-primary-800 hover:text-accent-600"
+            >
+              Mehr über die Praxis erfahren
+              <svg viewBox="0 0 20 20" className="h-4 w-4" fill="currentColor">
+                <path d="M7.5 4.5 13 10l-5.5 5.5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* BeckenBodenBoosta highlight */}
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 items-center gap-10 overflow-hidden rounded-3xl bg-accent-100 lg:grid-cols-2">
+          <div className="relative aspect-[4/3] lg:aspect-auto lg:h-full">
+            <Image
+              src="/images/becken_2.jpg"
+              alt="BeckenBodenBoosta – Beckenbodentraining im Sitzen"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
+          <div className="px-6 py-10 sm:px-10 lg:py-16">
+            <p className="text-sm font-semibold uppercase tracking-wide text-accent-600">
+              Setzen … und gut!
+            </p>
+            <h2 className="mt-2 font-serif-heading text-3xl font-semibold text-primary-800">
+              Beckenbodentraining, bei dem Sie nichts weiter tun müssen als Platz zu nehmen
+            </h2>
+            <p className="mt-4 text-primary-700">
+              Der BeckenBodenBoosta trainiert Ihren Beckenboden vollständig bekleidet, im
+              Sitzen und ganz ohne aktives Mitmachen. Eine Sitzung dauert rund 30 Minuten
+              und erzielt bis zu 15-mal stärkere Trainingsergebnisse als eigenständiges
+              Training – Ihr erster Termin ist kostenlos.
+            </p>
+            <Link
+              href="/schwerpunkte/beckenbodentraining"
+              className="mt-6 inline-block rounded-full bg-primary-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-primary-800"
+            >
+              Mehr zum BeckenBodenBoosta
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Services grid */}
+      <section className="bg-cream-50">
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-wide text-accent-600">
+              Schwerpunkte
+            </p>
+            <h2 className="mt-2 font-serif-heading text-3xl font-semibold text-primary-800">
+              Naturheilkundliche Behandlungen in Köln
+            </h2>
+          </div>
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {services.map((s) => (
+              <Link
+                key={s.slug}
+                href={`/schwerpunkte/${s.slug}`}
+                className="group overflow-hidden rounded-2xl border border-primary-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+              >
+                <div className="relative aspect-[16/10] overflow-hidden">
+                  <Image
+                    src={s.image}
+                    alt={s.title}
+                    fill
+                    sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw"
+                    className="object-cover transition duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="font-semibold text-primary-800">{s.title}</h3>
+                  <p className="mt-2 text-sm text-primary-600">{s.teaser}</p>
+                  <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-accent-600">
+                    Mehr erfahren
+                    <svg viewBox="0 0 20 20" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8">
+                      <path d="M7.5 4.5 13 10l-5.5 5.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* First appointment */}
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wide text-accent-600">
+              Ihr erster Termin
+            </p>
+            <h2 className="mt-2 font-serif-heading text-3xl font-semibold text-primary-800">
+              Das passiert beim ersten Termin zur natürlichen Schmerzbehandlung
+            </h2>
+            <p className="mt-4 text-primary-700">
+              Am Anfang steht ein ausführliches Anamnesegespräch: frühere schwere
+              Erkrankungen, Unfälle und Operationen. Anschließend folgt in der Regel eine
+              körperliche Untersuchung, bevor wir gemeinsam den Behandlungsplan besprechen.
+              In den meisten Fällen beginnt die erste Behandlung noch am selben Termin –
+              Ausnahmen bilden Blutegeltherapie, Abnehmen, Raucherentwöhnung und
+              Beckenbodentraining, die etwas Vorbereitung benötigen.
+            </p>
+            <h3 className="mt-8 font-semibold text-primary-800">
+              Bitte bringen Sie zum ersten Termin mit:
+            </h3>
+            <ul className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2">
+              {firstAppointmentDocs.map((doc) => (
+                <li key={doc} className="flex items-start gap-2 text-sm text-primary-700">
+                  <svg viewBox="0 0 20 20" className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent-500" fill="currentColor">
+                    <path d="M8.3 13.4 4.9 10l-1.4 1.4 4.8 4.8 9-9-1.4-1.4z" />
+                  </svg>
+                  {doc}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl lg:aspect-auto">
+            <Image
+              src="/images/laser_2.jpg"
+              alt="Beratungsgespräch in der Naturheilpraxis Meschede"
+              fill
+              sizes="(min-width: 1024px) 45vw, 100vw"
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <CTASection
+        title="Vereinbaren Sie noch heute Ihren Termin"
+        text="Termine vergebe ich am liebsten und schnellsten über Doctolib. Alternativ erreichen Sie mich per E-Mail oder über das Kontaktformular – ich melde mich in der Regel innerhalb von 24 Stunden."
+      />
+
+      {/* Location */}
+      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wide text-accent-600">
+              So finden Sie uns
+            </p>
+            <h2 className="mt-2 font-serif-heading text-3xl font-semibold text-primary-800">
+              Naturheilpraxis Meschede in der Kölner Innenstadt
+            </h2>
+            <div className="mt-6 space-y-4 text-primary-700">
+              <p>
+                <strong className="text-primary-800">Adresse:</strong>
+                <br />
+                {practice.addressFull}
+              </p>
+              <p>
+                <strong className="text-primary-800">Öffnungszeiten:</strong>
+                <br />
+                {practice.hours}
+              </p>
+              <p>
+                <strong className="text-primary-800">Parken:</strong> Opera Passagen
+                Parkhaus direkt gegenüber, ca. 2 Gehminuten entfernt.
+              </p>
+              <p>
+                <strong className="text-primary-800">ÖPNV:</strong> U-Bahn-Haltestelle
+                Appellhofplatz (Linien 3, 4, 5, 16, 18), ca. 3 Gehminuten entfernt.
+              </p>
+              <p>
+                <strong className="text-primary-800">Zweitstandort:</strong>{" "}
+                {practice.secondLocationName}, {practice.secondLocationAddress}
+              </p>
+            </div>
+          </div>
+          <MapEmbed />
+        </div>
+      </section>
+    </>
   );
 }

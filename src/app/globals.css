@@ -1,26 +1,66 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fbf9f4;
+  --foreground: #23291f;
+  --color-primary-50: #f0f5f0;
+  --color-primary-100: #dbe8db;
+  --color-primary-200: #b8d1b8;
+  --color-primary-300: #8fb590;
+  --color-primary-400: #679569;
+  --color-primary-500: #47764c;
+  --color-primary-600: #365d3b;
+  --color-primary-700: #2c4a30;
+  --color-primary-800: #243c27;
+  --color-primary-900: #1c2f1e;
+  --color-accent-100: #f6e6cf;
+  --color-accent-300: #e3bd83;
+  --color-accent-400: #d5a55e;
+  --color-accent-500: #c08c3f;
+  --color-accent-600: #a4712e;
+  --color-cream-50: #fdfbf6;
+  --color-cream-100: #fbf9f4;
+  --color-cream-200: #f3ede0;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-lora);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary-50: var(--color-primary-50);
+  --color-primary-100: var(--color-primary-100);
+  --color-primary-200: var(--color-primary-200);
+  --color-primary-300: var(--color-primary-300);
+  --color-primary-400: var(--color-primary-400);
+  --color-primary-500: var(--color-primary-500);
+  --color-primary-600: var(--color-primary-600);
+  --color-primary-700: var(--color-primary-700);
+  --color-primary-800: var(--color-primary-800);
+  --color-primary-900: var(--color-primary-900);
+
+  --color-accent-100: var(--color-accent-100);
+  --color-accent-300: var(--color-accent-300);
+  --color-accent-400: var(--color-accent-400);
+  --color-accent-500: var(--color-accent-500);
+  --color-accent-600: var(--color-accent-600);
+
+  --color-cream-50: var(--color-cream-50);
+  --color-cream-100: var(--color-cream-100);
+  --color-cream-200: var(--color-cream-200);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.font-serif-heading {
+  font-family: var(--font-lora), Georgia, serif;
 }
