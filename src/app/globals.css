@@ -70,7 +70,7 @@ html {
     transform: scale(1) translate(0, 0);
   }
   50% {
-    transform: scale(1.08) translate(-1%, -1%);
+    transform: scale(1.025) translate(-0.4%, -0.4%);
   }
   100% {
     transform: scale(1) translate(0, 0);
@@ -78,7 +78,7 @@ html {
 }
 
 .animate-hero-kenburns {
-  animation: hero-kenburns 60s ease-in-out infinite;
+  animation: hero-kenburns 90s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
