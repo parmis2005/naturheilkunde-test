@@ -37,15 +37,19 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden bg-primary-800">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/hero_banner.jpg"
-            alt="Naturheilpraxis Meschede – Kölner Dom Silhouette"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover opacity-80"
-          />
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="flex h-full items-end animate-hero-drift">
+            {Array.from({ length: 8 }).map((_, i) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                key={i}
+                src="/images/dom-silhouette.svg"
+                alt=""
+                aria-hidden="true"
+                className="h-full w-auto flex-shrink-0"
+              />
+            ))}
+          </div>
           <div className="absolute inset-0 bg-gradient-to-t from-primary-900/90 via-primary-800/70 to-primary-800/55" />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8 lg:py-32">

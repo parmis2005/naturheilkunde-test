@@ -64,3 +64,23 @@ html {
 .font-serif-heading {
   font-family: var(--font-lora), Georgia, serif;
 }
+
+@keyframes hero-drift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-hero-drift {
+  width: max-content;
+  animation: hero-drift 140s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-drift {
+    animation: none;
+  }
+}
