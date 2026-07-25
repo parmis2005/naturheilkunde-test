@@ -39,14 +39,14 @@ export default function HomePage() {
       <section className="relative overflow-hidden bg-primary-800">
         <div className="absolute inset-0">
           <Image
-            src="/images/osteo_3.jpg"
-            alt="Michael Meschede, Heilpraktiker in Köln, in seiner Naturheilpraxis"
+            src="/images/hero_banner.jpg"
+            alt="Naturheilpraxis Meschede – Kölner Dom Silhouette"
             fill
             priority
             sizes="100vw"
-            className="object-cover opacity-35"
+            className="object-cover opacity-80"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary-900 via-primary-800/85 to-primary-800/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary-900/90 via-primary-800/70 to-primary-800/55" />
         </div>
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8 lg:py-32">
           <p className="mb-4 inline-block rounded-full bg-accent-500/90 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-white">
