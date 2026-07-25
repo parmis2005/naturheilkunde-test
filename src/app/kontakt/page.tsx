@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import MapEmbed from "@/components/MapEmbed";
 import ContactForm from "@/components/ContactForm";
-import { practice } from "@/lib/site-data";
+import { externalContactLinks, practice } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Kontakt",
@@ -74,6 +74,12 @@ export default function KontaktPage() {
               <p className="mt-2 text-sm text-primary-700">
                 {practice.secondLocationAddress}
               </p>
+              <p className="mt-2 text-sm text-primary-700">
+                Mobil / WhatsApp:{" "}
+                <a href={practice.mobileHref} className="font-semibold text-accent-600">
+                  {practice.mobile}
+                </a>
+              </p>
               <p className="mt-2 text-sm text-primary-600">
                 Standort für Beckenbodentraining mit dem BeckenBodenBoosta in Hürth.
               </p>
@@ -100,6 +106,25 @@ export default function KontaktPage() {
             <div className="mt-6">
               <ContactForm />
             </div>
+          </div>
+        </div>
+
+        <div className="mt-16 rounded-2xl border border-primary-100 bg-primary-50 p-6 sm:p-8">
+          <h2 className="font-serif-heading text-2xl font-semibold text-primary-800">
+            Weitere Profile und Verzeichnisse
+          </h2>
+          <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {externalContactLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl border border-primary-100 bg-white px-4 py-3 text-sm font-semibold text-primary-700 transition hover:border-accent-300 hover:text-accent-600"
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
         </div>
 

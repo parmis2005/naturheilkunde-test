@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CTASection from "@/components/CTASection";
 import MapEmbed from "@/components/MapEmbed";
-import { practice, services } from "@/lib/site-data";
+import { healthArticles, practice, services } from "@/lib/site-data";
 
 const benefits = [
   {
@@ -270,6 +270,12 @@ export default function HomePage() {
               Ausnahmen bilden Blutegeltherapie, Abnehmen, Raucherentwöhnung und
               Beckenbodentraining, die etwas Vorbereitung benötigen.
             </p>
+            <p className="mt-4 text-primary-700">
+              Auch ohne vorhandene Befunde finden wir gemeinsam ein passendes
+              Therapiekonzept. Für den ersten Termin nehme ich mir bewusst viel Zeit; die
+              Kosten liegen bei 65 € – unabhängig davon, ob der Termin eine halbe Stunde
+              oder länger dauert.
+            </p>
             <h3 className="mt-8 font-semibold text-primary-800">
               Bitte bringen Sie zum ersten Termin mit:
             </h3>
@@ -291,6 +297,34 @@ export default function HomePage() {
               fill
               sizes="(min-width: 1024px) 45vw, 100vw"
               className="object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Intro video */}
+      <section className="bg-primary-50">
+        <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-wide text-accent-600">
+              Praxisfilm
+            </p>
+            <h2 className="mt-2 font-serif-heading text-3xl font-semibold text-primary-800">
+              So finden Sie den Weg in die Naturheilpraxis Köln
+            </h2>
+            <p className="mt-4 text-primary-700">
+              Termine zur Schmerztherapie, Raucherentwöhnung und weiteren Behandlungen
+              können Sie telefonisch oder per E-Mail vereinbaren; am schnellsten klappt es
+              über Doctolib oder per E-Mail.
+            </p>
+          </div>
+          <div className="mt-8 aspect-video overflow-hidden rounded-2xl border border-primary-100 bg-white shadow-sm">
+            <iframe
+              src="https://www.youtube.com/embed/gPEfYurrztg"
+              title="Naturheilpraxis Meschede Köln"
+              className="h-full w-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
             />
           </div>
         </div>
@@ -337,6 +371,39 @@ export default function HomePage() {
             </div>
           </div>
           <MapEmbed />
+        </div>
+      </section>
+
+      {/* Gesundheit aktuell */}
+      <section className="bg-cream-50">
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-wide text-accent-600">
+              Gesundheit aktuell
+            </p>
+            <h2 className="mt-2 font-serif-heading text-3xl font-semibold text-primary-800">
+              Aktuelle Gesundheitsthemen
+            </h2>
+          </div>
+          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+            {healthArticles.map((article) => (
+              <a
+                key={article.href}
+                href={article.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl border border-primary-100 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+              >
+                <p className="text-xs font-semibold uppercase tracking-wide text-accent-600">
+                  {article.date}
+                </p>
+                <h3 className="mt-3 font-serif-heading text-xl font-semibold text-primary-800">
+                  {article.title}
+                </h3>
+                <p className="mt-3 text-sm text-primary-600">{article.teaser}</p>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
     </>

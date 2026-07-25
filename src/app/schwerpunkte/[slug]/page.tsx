@@ -50,7 +50,7 @@ export default async function SchwerpunktPage({
                 {section.heading}
               </h2>
               {section.paragraphs?.map((p, i) => (
-                <p key={i} className="mt-4 text-primary-700">
+                <p key={i} className="mt-4 break-words text-primary-700">
                   {p}
                 </p>
               ))}
@@ -77,6 +77,28 @@ export default async function SchwerpunktPage({
               )}
             </div>
           ))}
+
+          {data.slug === "beckenbodentraining" && (
+            <div className="space-y-6">
+              <div className="aspect-video overflow-hidden rounded-2xl border border-primary-100 bg-white shadow-sm">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/f9I6IyZxoGQ?si=SnfY-BW3WP8A_nOg"
+                  title="BeckenBodenBoosta Praxisvideo"
+                  className="h-full w-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
+              <a
+                href="https://www.paypal.com/ncp/payment/TZSCHGGMHENX2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-full bg-accent-500 px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-accent-600"
+              >
+                Trainingskarte über PayPal kaufen
+              </a>
+            </div>
+          )}
 
           {data.priceNote && (
             <div className="rounded-2xl border border-accent-300 bg-accent-100/60 p-6">
