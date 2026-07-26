@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Lora } from "next/font/google";
+import { Geist, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -11,8 +11,8 @@ const inter = Inter({
   display: "swap",
 });
 
-const lora = Lora({
-  variable: "--font-lora",
+const geist = Geist({
+  variable: "--font-geist",
   subsets: ["latin"],
   display: "swap",
 });
@@ -32,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" className={`${inter.variable} ${lora.variable} h-full`}>
+    <html lang="de" className={`${inter.variable} ${geist.variable} h-full`}>
       <body className="flex min-h-full flex-col bg-cream-100 text-foreground antialiased">
         <Header />
         <main className="flex-1 pb-16 md:pb-0">{children}</main>

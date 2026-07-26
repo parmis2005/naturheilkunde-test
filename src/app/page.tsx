@@ -54,8 +54,15 @@ export default function HomePage() {
           <p className="mb-4 inline-block rounded-full bg-accent-500/90 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-white">
             Neu in Köln und Hürth: BeckenBodenBoosta
           </p>
-          <h1 className="max-w-3xl font-serif-heading text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
-            Natürliche Schmerzbehandlung in der Naturheilpraxis Meschede
+          <h1 className="max-w-5xl font-serif-heading text-4xl font-semibold leading-[1.05] text-white sm:text-5xl lg:text-6xl">
+            <span className="block">Natürliche</span>
+            <span className="block">
+              <span className="font-extrabold tracking-[-0.02em] text-accent-100">
+                Schmerzbehandlung
+              </span>{" "}
+              in der
+            </span>
+            <span className="block">Naturheilpraxis Meschede</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-primary-100">
             Ich behandle Ihre Schmerzen natürlich, ganzheitlich und in der Regel bereits
