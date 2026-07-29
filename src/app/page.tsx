@@ -50,26 +50,34 @@ export default function HomePage() {
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-primary-900/90 via-primary-800/70 to-primary-800/55" />
         </div>
-        <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8 lg:py-32">
+        <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-28 lg:px-8 lg:py-32">
           <p className="mb-4 inline-block rounded-full bg-accent-500/90 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-white">
             Neu in Köln und Hürth: BeckenBodenBoosta
           </p>
-          <h1 className="max-w-5xl font-serif-heading text-4xl font-semibold leading-[1.05] text-white sm:text-5xl lg:text-6xl">
+          <h1 className="max-w-5xl font-serif-heading text-[2rem] font-semibold leading-[1.08] text-white sm:text-5xl sm:leading-[1.05] lg:text-6xl">
             <span className="block">Natürliche</span>
             <span className="block">
               <span className="font-extrabold tracking-[-0.02em] text-accent-100">
                 Schmerzbehandlung
-              </span>{" "}
-              in der
+              </span>
+              <span className="hidden sm:inline"> in der</span>
             </span>
-            <span className="block">Naturheilpraxis Meschede</span>
+            <span className="block sm:hidden">in der Naturheilpraxis</span>
+            <span className="block sm:hidden">Meschede</span>
+            <span className="hidden sm:block">Naturheilpraxis Meschede</span>
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-primary-100">
-            Ich behandle Ihre Schmerzen natürlich, ganzheitlich und in der Regel bereits
-            direkt beim ersten Termin – mit Blutegeltherapie, Laserakupunktur, Osteopathie
-            und weiteren bewährten naturheilkundlichen Verfahren.
+          <p className="mt-5 max-w-xl text-base leading-7 text-primary-100 sm:mt-6 sm:max-w-2xl sm:text-lg sm:leading-relaxed">
+            <span className="sm:hidden">
+              Ich behandle Ihre Schmerzen natürlich, ganzheitlich und meist direkt beim
+              ersten Termin.
+            </span>
+            <span className="hidden sm:inline">
+              Ich behandle Ihre Schmerzen natürlich, ganzheitlich und in der Regel bereits
+              direkt beim ersten Termin – mit Blutegeltherapie, Laserakupunktur,
+              Osteopathie und weiteren bewährten naturheilkundlichen Verfahren.
+            </span>
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row">
             <a
               href={practice.doctolibUrl}
               target="_blank"
@@ -85,7 +93,7 @@ export default function HomePage() {
               Kontakt aufnehmen
             </Link>
           </div>
-          <p className="mt-8 text-sm text-primary-200">
+          <p className="mt-6 text-xs leading-5 text-primary-200 sm:mt-8 sm:text-sm sm:leading-normal">
             {practice.addressFull} · {practice.hours}
           </p>
         </div>
