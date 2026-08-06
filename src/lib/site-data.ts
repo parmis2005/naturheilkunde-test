@@ -1,28 +1,28 @@
 export const practice = {
-  name: "Naturheilpraxis Meschede",
-  practitioner: "Michael Meschede",
+  name: "Naturheilpraxis Mustermann",
+  practitioner: "Max Mustermann",
   title: "Heilpraktiker Köln",
-  addressLine1: "Breite Str. 28-30",
+  addressLine1: "Musterstraße 12",
   addressLine2: "50667 Köln",
-  addressFull: "Breite Str. 28-30, 50667 Köln",
-  secondLocationName: "PRAXIS M. MESCHEDE / BeckenBodenBoosta",
-  secondLocationAddress: "Bachstr. 60, 50354 Hürth",
-  phone: "0221 9345700",
-  phoneHref: "tel:+492219345700",
-  mobile: "0155 66835501",
-  mobileHref: "tel:+4915566835501",
-  whatsappHref: "https://wa.me/4915566835501",
-  fax: "0221 25083081",
-  email: "info@naturheilpraxis-meschede.de",
+  addressFull: "Musterstraße 12, 50667 Köln",
+  secondLocationName: "PRAXIS M. MUSTERMANN / BeckenBodenBoosta",
+  secondLocationAddress: "Gartenstr. 45, 50354 Hürth",
+  phone: "0123 456789",
+  phoneHref: "tel:+490123456789",
+  mobile: "0123 456789",
+  mobileHref: "tel:+490123456789",
+  whatsappHref: "https://wa.me/490123456789",
+  fax: "0123 456789",
+  email: "info@naturheilpraxis-mustermann.de",
   hours: "Montag – Freitag: 8:30 – 18:30 Uhr",
   doctolibUrl:
-    "https://www.doctolib.de/heilpraktiker/koeln/michael-meschede?utm_campaign=website-button&utm_source=michael-meschede-website-button&utm_medium=referral&utm_content=option-8&utm_term=michael-meschede",
-  oldAppointmentUrl: "https://naturheilpraxis-meschede.de/content/terminvereinbarung",
-  mapsQuery: "Breite Str. 28-30, 50667 Köln",
-  lat: 50.9391801,
-  lon: 6.9522776,
+    "https://www.doctolib.de/heilpraktiker/koeln/max-mustermann?utm_campaign=website-button&utm_source=max-mustermann-website-button&utm_medium=referral&utm_content=option-8&utm_term=max-mustermann",
+  oldAppointmentUrl: "https://naturheilpraxis-mustermann.de/content/terminvereinbarung",
+  mapsQuery: "Musterstraße 12, 50667 Köln",
+  lat: 50.941,
+  lon: 6.958,
   mapsEmbedSrc:
-    "https://www.openstreetmap.org/export/embed.html?bbox=6.9482776%2C50.9361801%2C6.9562776%2C50.9421801&layer=mapnik&marker=50.9391801%2C6.9522776",
+    "https://www.openstreetmap.org/export/embed.html?bbox=6.9540000%2C50.9380000%2C6.9620000%2C50.9440000&layer=mapnik&marker=50.9410000%2C6.9580000",
 };
 
 export type NavItem = {
@@ -61,62 +61,62 @@ export const navigation: NavItem[] = [
   { label: "Kontakt", href: "/kontakt" },
   {
     label: "Praxisgemeinschaft",
-    href: "https://kanomassage.de",
+    href: "https://massagepraxis-sonnenschein.de",
     children: [
-      { label: "Massagepraxis", href: "https://kanomassage.de" },
-      { label: "Praxis für Psychotherapie", href: "https://psychotherapie-multhaupt.de" },
+      { label: "Massagepraxis", href: "https://massagepraxis-sonnenschein.de" },
+      { label: "Praxis für Psychotherapie", href: "https://psychotherapie-bergmann.de" },
     ],
   },
 ];
 
 export const footerPartnerLinks = [
-  { label: "Massagepraxis Kanomassage", href: "https://kanomassage.de" },
+  { label: "Massagepraxis Sonnenschein", href: "https://massagepraxis-sonnenschein.de" },
   {
-    label: "Psychotherapiepraxis Multhaupt",
-    href: "https://psychotherapie-multhaupt.de",
+    label: "Psychotherapiepraxis Bergmann",
+    href: "https://psychotherapie-bergmann.de",
   },
 ];
 
 export const externalContactLinks = [
   {
-    label: "Naturheilpraxis Meschede bei GoYellow",
-    href: "https://www.goyellow.de/home/heilpraktiker-fuer-lasertherapie-naturheilpraxis-meschede-altstadt-stadt-koeln.html?topxid=9283465",
+    label: "Naturheilpraxis Mustermann bei GoYellow",
+    href: "#",
   },
   {
     label: "Heilpraktiker für Lasertherapie Köln",
-    href: "https://www.goyellow.de/suche/heilpraktiker-f%C3%BCr-lasertherapie/k%C3%B6ln?topxid=9283465",
+    href: "#",
   },
-  { label: "Firmenbuch für Köln", href: "http://www.koeln-informativ.de/" },
-  { label: "www.naturheilkunde.de", href: "http://www.naturheilkunde.de/" },
-  { label: "www.wohlfuehlportal.de", href: "http://www.wohlfuehlportal.de/" },
+  { label: "Firmenbuch für Köln", href: "#" },
+  { label: "www.naturheilkunde-verzeichnis.de", href: "#" },
+  { label: "www.wohlfuehlportal-beispiel.de", href: "#" },
   {
-    label: "Physiotherapie Witten Bochum Remscheid",
-    href: "http://physiotherapie-witten-bochum-remscheid.de/",
+    label: "Physiotherapie Musterstadt",
+    href: "#",
   },
-  { label: "Regional.de Köln", href: "http://www.regional.de/ks/179" },
-  { label: "www.heilpraktiker.info", href: "http://www.heilpraktiker.info" },
-  { label: "Michael Meschede bei jameda.de", href: "https://www.jameda.de/michael-meschede/heilpraktiker/koeln" },
+  { label: "Regional.de Köln", href: "#" },
+  { label: "www.heilpraktiker-beispiel.info", href: "#" },
+  { label: "Max Mustermann bei jameda.de", href: "#" },
 ];
 
 export const healthArticles = [
   {
     title: "Wie kommt es zu einer Pilzinfektion?",
-    date: "Samstag, 25. Juli 2026",
-    href: "http://www.gesundheit-aktuell.de/artikel/wie-kommt-es-zu-einer-pilzinfektion.html",
+    date: "Samstag, 1. August 2026",
+    href: "#",
     teaser:
       "Was ist ein Pilz, und warum gibt es Pilze, die bei Menschen Infektionen auslösen können?",
   },
   {
     title: "Haarpflege im Sommer",
-    date: "Donnerstag, 23. Juli 2026",
-    href: "http://www.gesundheit-aktuell.de/artikel/haarpflege-im-sommer.html",
+    date: "Donnerstag, 30. Juli 2026",
+    href: "#",
     teaser:
       "Sommerliche Sonne belastet nicht nur die Haut, sondern auch die Haare.",
   },
   {
     title: "Wenn Schwitzen zum Lebensproblem wird",
-    date: "Dienstag, 21. Juli 2026",
-    href: "http://www.gesundheit-aktuell.de/artikel/wenn-schwitzen-zum-lebensproblem-wird.html",
+    date: "Dienstag, 28. Juli 2026",
+    href: "#",
     teaser:
       "Übermäßiges krankhaftes Schwitzen belastet Betroffene körperlich und seelisch.",
   },

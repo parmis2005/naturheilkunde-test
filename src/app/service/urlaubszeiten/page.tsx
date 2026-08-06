@@ -6,7 +6,7 @@ import { practice } from "@/lib/site-data";
 export const metadata: Metadata = {
   title: "Urlaubszeiten",
   description:
-    "Aktuelle Urlaubs- und Fortbildungszeiten der Naturheilpraxis Meschede in Köln.",
+    "Aktuelle Urlaubs- und Fortbildungszeiten der Naturheilpraxis Mustermann in Köln.",
 };
 
 export default function UrlaubszeitenPage() {
@@ -17,18 +17,18 @@ export default function UrlaubszeitenPage() {
         title="Urlaubszeiten"
         subtitle="Urlaub und Fortbildungen 2026"
         image="/images/osteo_3.jpg"
-        imageAlt="Naturheilpraxis Meschede in Köln"
+        imageAlt="Naturheilpraxis Mustermann in Köln"
       />
 
       <section className="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="rounded-2xl border border-accent-300 bg-accent-100/60 p-6 sm:p-8">
           <h2 className="font-serif-heading text-2xl font-semibold text-primary-800">
-            Vom 06.08.2026 bis zum 25.08.2026
+            Vom 10.08.2026 bis zum 29.08.2026
           </h2>
           <p className="mt-4 text-primary-700">
             In diesem Zeitraum bin ich wegen meines Sommerurlaubs persönlich nicht
             erreichbar. In dringenden Fällen wenden sich Kölner Patient:innen bitte an
-            meinen Kollegen Danil, Hürther Patient:innen an Sandra.
+            meinen Kollegen Jonas, Hürther Patient:innen an Nina.
           </p>
           <p className="mt-4 text-primary-700">
             Terminanfragen können Sie in dieser Zeit selbstverständlich über Doctolib

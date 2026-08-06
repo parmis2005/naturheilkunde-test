@@ -4,7 +4,7 @@ import { practice } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Datenschutz",
-  description: "Datenschutzerklärung der Naturheilpraxis Meschede in Köln.",
+  description: "Datenschutzerklärung der Naturheilpraxis Mustermann in Köln.",
 };
 
 export default function DatenschutzPage() {
@@ -13,7 +13,7 @@ export default function DatenschutzPage() {
       <PageHero
         title="Datenschutzerklärung"
         image="/images/laser_1.jpg"
-        imageAlt="Naturheilpraxis Meschede"
+        imageAlt="Naturheilpraxis Mustermann"
       />
       <section className="mx-auto max-w-3xl space-y-8 px-4 py-16 text-primary-700 sm:px-6 lg:px-8">
         <div>

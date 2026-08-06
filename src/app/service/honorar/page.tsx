@@ -5,7 +5,7 @@ import CTASection from "@/components/CTASection";
 export const metadata: Metadata = {
   title: "Honorar",
   description:
-    "Honorarübersicht der Naturheilpraxis Meschede in Köln: Preise für Erstberatung, Folgesitzungen, Raucherentwöhnung, Abnehmen und Beckenbodentraining.",
+    "Honorarübersicht der Naturheilpraxis Mustermann in Köln: Preise für Erstberatung, Folgesitzungen, Raucherentwöhnung, Abnehmen und Beckenbodentraining.",
 };
 
 const generalFees = [
@@ -43,9 +43,9 @@ export default function HonorarPage() {
       <PageHero
         eyebrow="Service"
         title="Honorar"
-        subtitle="Transparente Preise für alle Behandlungen in der Naturheilpraxis Meschede – alle Preise sind Endpreise, es kommt keine Mehrwertsteuer hinzu."
+        subtitle="Transparente Preise für alle Behandlungen in der Naturheilpraxis Mustermann – alle Preise sind Endpreise, es kommt keine Mehrwertsteuer hinzu."
         image="/images/osteo_2.jpg"
-        imageAlt="Beratungsgespräch in der Naturheilpraxis Meschede"
+        imageAlt="Beratungsgespräch in der Naturheilpraxis Mustermann"
       />
 
       <section className="mx-auto max-w-4xl px-4 py-14 sm:px-6 lg:px-8">

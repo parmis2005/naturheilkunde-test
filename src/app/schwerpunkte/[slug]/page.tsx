@@ -80,17 +80,14 @@ export default async function SchwerpunktPage({
 
           {data.slug === "beckenbodentraining" && (
             <div className="space-y-6">
-              <div className="aspect-video overflow-hidden rounded-2xl border border-primary-100 bg-white shadow-sm">
-                <iframe
-                  src="https://www.youtube-nocookie.com/embed/f9I6IyZxoGQ?si=SnfY-BW3WP8A_nOg"
-                  title="BeckenBodenBoosta Praxisvideo"
-                  className="h-full w-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                />
+              <div className="flex aspect-video flex-col items-center justify-center gap-3 rounded-2xl border border-primary-100 bg-primary-100/60 text-primary-400 shadow-sm">
+                <svg viewBox="0 0 24 24" className="h-14 w-14" fill="currentColor">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+                <span className="text-sm font-semibold">Videoplatzhalter</span>
               </div>
               <a
-                href="https://www.paypal.com/ncp/payment/TZSCHGGMHENX2"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block rounded-full bg-accent-500 px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-accent-600"

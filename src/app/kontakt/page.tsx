@@ -7,7 +7,7 @@ import { externalContactLinks, practice } from "@/lib/site-data";
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Kontaktieren Sie die Naturheilpraxis Meschede in Köln: Adresse, Telefon, E-Mail, Öffnungszeiten und Anfahrt.",
+    "Kontaktieren Sie die Naturheilpraxis Mustermann in Köln: Adresse, Telefon, E-Mail, Öffnungszeiten und Anfahrt.",
 };
 
 export default function KontaktPage() {
@@ -18,14 +18,14 @@ export default function KontaktPage() {
         title="Kontakt & Anfahrt"
         subtitle="Termine vergebe ich am liebsten und schnellsten über Doctolib. Alternativ erreichen Sie mich per Telefon, E-Mail oder über das Kontaktformular."
         image="/images/osteo_3.jpg"
-        imageAlt="Naturheilpraxis Meschede in Köln"
+        imageAlt="Naturheilpraxis Mustermann in Köln"
       />
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
           <div>
             <h2 className="font-serif-heading text-2xl font-semibold text-primary-800">
-              Naturheilpraxis Meschede
+              Naturheilpraxis Mustermann
             </h2>
             <address className="mt-4 space-y-2 not-italic text-primary-700">
               <p>{practice.addressLine1}</p>

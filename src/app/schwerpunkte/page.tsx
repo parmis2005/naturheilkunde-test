@@ -7,7 +7,7 @@ import { schwerpunkte } from "@/lib/schwerpunkte-data";
 export const metadata: Metadata = {
   title: "Schwerpunkte",
   description:
-    "Alle naturheilkundlichen Schwerpunkte der Naturheilpraxis Meschede in Köln im Überblick: Blutegeltherapie, Laserakupunktur, Osteopathie, Raucherentwöhnung, Abnehmen und Beckenbodentraining.",
+    "Alle naturheilkundlichen Schwerpunkte der Naturheilpraxis Mustermann in Köln im Überblick: Blutegeltherapie, Laserakupunktur, Osteopathie, Raucherentwöhnung, Abnehmen und Beckenbodentraining.",
 };
 
 export default function SchwerpunkteOverviewPage() {
@@ -17,7 +17,7 @@ export default function SchwerpunkteOverviewPage() {
         title="Unsere Schwerpunkte"
         subtitle="Naturheilkundliche Behandlungen in Köln – natürlich, ganzheitlich und in der Regel direkt beim ersten Termin."
         image="/images/osteo_2.jpg"
-        imageAlt="Naturheilkundliche Behandlung in der Naturheilpraxis Meschede"
+        imageAlt="Naturheilkundliche Behandlung in der Naturheilpraxis Mustermann"
       />
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

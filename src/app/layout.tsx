@@ -19,11 +19,11 @@ const geist = Geist({
 
 export const metadata: Metadata = {
   title: {
-    default: "Naturheilpraxis Meschede | Heilpraktiker Köln",
-    template: "%s | Naturheilpraxis Meschede",
+    default: "Naturheilpraxis Mustermann | Heilpraktiker Köln",
+    template: "%s | Naturheilpraxis Mustermann",
   },
   description:
-    "Naturheilpraxis Meschede in Köln: natürliche Schmerzbehandlung mit Blutegeltherapie, Laserakupunktur, Osteopathie, Raucherentwöhnung, Abnehmen und Beckenbodentraining beim erfahrenen Heilpraktiker Michael Meschede.",
+    "Naturheilpraxis Mustermann in Köln: natürliche Schmerzbehandlung mit Blutegeltherapie, Laserakupunktur, Osteopathie, Raucherentwöhnung, Abnehmen und Beckenbodentraining beim erfahrenen Heilpraktiker Max Mustermann.",
 };
 
 export default function RootLayout({

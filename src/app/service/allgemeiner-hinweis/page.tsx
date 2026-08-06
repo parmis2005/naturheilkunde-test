@@ -7,7 +7,7 @@ import { practice } from "@/lib/site-data";
 export const metadata: Metadata = {
   title: "Allgemeiner Hinweis",
   description:
-    "Aktuelle Neuigkeiten und Hinweise der Naturheilpraxis Meschede in Köln: Baumpflanzaktion, BeckenBodenBoosta und Informationen zu naturheilkundlichen Therapieverfahren.",
+    "Aktuelle Neuigkeiten und Hinweise der Naturheilpraxis Mustermann in Köln: Baumpflanzaktion, BeckenBodenBoosta und Informationen zu naturheilkundlichen Therapieverfahren.",
 };
 
 export default function AllgemeinerHinweisPage() {
@@ -16,30 +16,30 @@ export default function AllgemeinerHinweisPage() {
       <PageHero
         eyebrow="Service"
         title="Allgemeiner Hinweis"
-        subtitle="Aktuelles aus der Naturheilpraxis Meschede in Köln."
+        subtitle="Aktuelles aus der Naturheilpraxis Mustermann in Köln."
         image="/images/becken_3.jpg"
-        imageAlt="Naturheilpraxis Meschede Köln – Aktuelles"
+        imageAlt="Naturheilpraxis Mustermann Köln – Aktuelles"
       />
 
       <section className="mx-auto max-w-4xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="rounded-2xl border border-primary-100 bg-primary-50 p-6 sm:p-8">
           <p className="text-sm font-semibold uppercase tracking-wide text-accent-600">
-            Neu in der Naturheilpraxis Meschede
+            Neu in der Naturheilpraxis Mustermann
           </p>
           <h2 className="mt-2 font-serif-heading text-2xl font-semibold text-primary-800">
             Für jeden neuen Patienten wird ein Baum gepflanzt
           </h2>
           <p className="mt-4 text-primary-700">
             Für jede neue Patientin und jeden neuen Patienten in der Naturheilpraxis
-            Meschede, der seinen Termin wahrnimmt und die Rechnung bezahlt, wird ein Baum
+            Mustermann, der seinen Termin wahrnimmt und die Rechnung bezahlt, wird ein Baum
             gepflanzt. Unser Partnerunternehmen{" "}
             <a
-              href="https://clickatree.com/"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-accent-600"
             >
-              clickatree.com
+              baumfreunde-online.de
             </a>{" "}
             unterstützt uns dabei.
           </p>

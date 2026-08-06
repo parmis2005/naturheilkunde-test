@@ -4,7 +4,7 @@ import { practice } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Impressum",
-  description: "Impressum der Naturheilpraxis Meschede in Köln.",
+  description: "Impressum der Naturheilpraxis Mustermann in Köln.",
 };
 
 export default function ImpressumPage() {
@@ -13,7 +13,7 @@ export default function ImpressumPage() {
       <PageHero
         title="Impressum"
         image="/images/osteo_1.jpg"
-        imageAlt="Naturheilpraxis Meschede"
+        imageAlt="Naturheilpraxis Mustermann"
       />
       <section className="mx-auto max-w-3xl space-y-8 px-4 py-16 text-primary-700 sm:px-6 lg:px-8">
         <div>
@@ -51,7 +51,7 @@ export default function ImpressumPage() {
           <p className="mt-3">
             Berufsbezeichnung: Heilpraktiker (verliehen in Deutschland)
             <br />
-            Erlaubnis erteilt am 07.11.2012 durch das Gesundheitsamt Köln.
+            Erlaubnis erteilt am 14.03.2015 durch das Gesundheitsamt Köln.
           </p>
           <p className="mt-3">
             Zuständige Aufsichtsbehörde:
@@ -67,9 +67,9 @@ export default function ImpressumPage() {
             Berufshaftpflichtversicherung
           </h2>
           <p className="mt-3">
-            Die Continentale Sachversicherung AG
+            Nordwest Versicherung AG
             <br />
-            Ruhrallee 92, 44139 Dortmund
+            Musterallee 10, 44135 Dortmund
           </p>
         </div>
 
@@ -124,7 +124,7 @@ export default function ImpressumPage() {
             Bildnachweise
           </h2>
           <p className="mt-3">
-            Ausgewählte Bilder: Fotolia, Panthermedia, Köln Verliebt.
+            Ausgewählte Bilder: Platzhalterbilder (Picsum Photos), nur zu Testzwecken.
           </p>
         </div>
       </section>

@@ -6,10 +6,10 @@ import { practice } from "@/lib/site-data";
 export const metadata: Metadata = {
   title: "Gutscheine",
   description:
-    "Verschenken Sie Gesundheit: Gutscheine der Naturheilpraxis Meschede in Köln, z. B. für die Raucherentwöhnung mit Laserakupunktur.",
+    "Verschenken Sie Gesundheit: Gutscheine der Naturheilpraxis Mustermann in Köln, z. B. für die Raucherentwöhnung mit Laserakupunktur.",
 };
 
-const paypalVoucherUrl = "https://www.paypal.com/ncp/payment/L94SF488B7VZY";
+const paypalVoucherUrl = "#";
 
 export default function GutscheinePage() {
   return (
@@ -17,9 +17,9 @@ export default function GutscheinePage() {
       <PageHero
         eyebrow="Service"
         title="Gutscheine"
-        subtitle="Verschenken Sie ein Stück Gesundheit – mit einem Gutschein aus der Naturheilpraxis Meschede."
+        subtitle="Verschenken Sie ein Stück Gesundheit – mit einem Gutschein aus der Naturheilpraxis Mustermann."
         image="/images/laser_1.jpg"
-        imageAlt="Gutschein der Naturheilpraxis Meschede in Köln"
+        imageAlt="Gutschein der Naturheilpraxis Mustermann in Köln"
       />
 
       <section className="mx-auto max-w-4xl px-4 py-14 sm:px-6 lg:px-8">

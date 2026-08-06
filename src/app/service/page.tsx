@@ -5,7 +5,7 @@ import PageHero from "@/components/PageHero";
 export const metadata: Metadata = {
   title: "Service",
   description:
-    "Serviceübersicht der Naturheilpraxis Meschede in Köln: Allgemeiner Hinweis, Honorar, Gutscheine und Urlaubszeiten.",
+    "Serviceübersicht der Naturheilpraxis Mustermann in Köln: Allgemeiner Hinweis, Honorar, Gutscheine und Urlaubszeiten.",
 };
 
 const items = [
@@ -22,7 +22,7 @@ const items = [
   {
     href: "/service/gutscheine",
     title: "Gutscheine",
-    text: "Verschenken Sie Gesundheit – Gutscheine für Behandlungen in der Naturheilpraxis Meschede.",
+    text: "Verschenken Sie Gesundheit – Gutscheine für Behandlungen in der Naturheilpraxis Mustermann.",
   },
   {
     href: "/service/urlaubszeiten",
@@ -36,9 +36,9 @@ export default function ServiceOverviewPage() {
     <>
       <PageHero
         title="Service"
-        subtitle="Alle wichtigen Informationen rund um Ihren Besuch in der Naturheilpraxis Meschede."
+        subtitle="Alle wichtigen Informationen rund um Ihren Besuch in der Naturheilpraxis Mustermann."
         image="/images/osteo_1.jpg"
-        imageAlt="Service der Naturheilpraxis Meschede"
+        imageAlt="Service der Naturheilpraxis Mustermann"
       />
       <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">

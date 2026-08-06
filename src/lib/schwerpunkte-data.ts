@@ -25,9 +25,9 @@ export const schwerpunkte: Schwerpunkt[] = [
     navLabel: "Blutegeltherapie",
     title: "Blutegeltherapie in Köln",
     metaDescription:
-      "Blutegeltherapie in der Naturheilpraxis Meschede in Köln: ausleitendes Verfahren bei Arthrose, Nervenschmerzen und rheumatischen Beschwerden.",
+      "Blutegeltherapie in der Naturheilpraxis Mustermann in Köln: ausleitendes Verfahren bei Arthrose, Nervenschmerzen und rheumatischen Beschwerden.",
     heroImage: "/images/blutegel_2.jpg",
-    heroImageAlt: "Blutegeltherapie in der Naturheilpraxis Meschede in Köln",
+    heroImageAlt: "Blutegeltherapie in der Naturheilpraxis Mustermann in Köln",
     intro:
       "Die Blutegeltherapie zählt zu den ältesten bekannten Heilverfahren der Menschheit. Als ausleitendes und derivatives Verfahren setze ich sie in meiner Kölner Praxis gezielt bei chronischen Schmerz- und Entzündungsprozessen ein.",
     sections: [
@@ -64,7 +64,7 @@ export const schwerpunkte: Schwerpunkt[] = [
       {
         heading: "Woher stammen die Blutegel?",
         paragraphs: [
-          "Ich beziehe meine Blutegel ausschließlich von der Biebertaler Blutegelzucht GmbH. So ist die Sterilität der Tiere garantiert, und jeder Blutegel wird nur ein einziges Mal bei einem Patienten eingesetzt.",
+          "Ich beziehe meine Blutegel ausschließlich von der Rheinland Blutegelzucht GmbH. So ist die Sterilität der Tiere garantiert, und jeder Blutegel wird nur ein einziges Mal bei einem Patienten eingesetzt.",
         ],
       },
       {
@@ -89,9 +89,9 @@ export const schwerpunkte: Schwerpunkt[] = [
     navLabel: "Laserakupunktur / Lasertherapie",
     title: "Laserakupunktur & Lasertherapie in Köln",
     metaDescription:
-      "Laserakupunktur und Lasertherapie in der Naturheilpraxis Meschede in Köln: nadelfrei, absolut schmerzfrei, auch für Kinder geeignet.",
+      "Laserakupunktur und Lasertherapie in der Naturheilpraxis Mustermann in Köln: nadelfrei, absolut schmerzfrei, auch für Kinder geeignet.",
     heroImage: "/images/laser_1.jpg",
-    heroImageAlt: "Laserakupunktur in der Naturheilpraxis Meschede in Köln",
+    heroImageAlt: "Laserakupunktur in der Naturheilpraxis Mustermann in Köln",
     intro:
       "Bei der Laserakupunktur stimuliere ich Akupunkturpunkte nicht mit Nadeln, sondern mit gebündeltem rotem oder infrarotem, energiearmem Licht. Die Lasertherapie nutzt dieselbe Technik großflächig zur Behandlung von Verletzungen, Wunden, Entzündungen und Schmerzen.",
     sections: [
@@ -147,9 +147,9 @@ export const schwerpunkte: Schwerpunkt[] = [
     navLabel: "Osteopathie",
     title: "Osteopathie in Köln",
     metaDescription:
-      "Osteopathie in der Naturheilpraxis Meschede in Köln: rein manuelle, ganzheitliche Diagnostik und Behandlung von Gelenk-, Rücken- und Kopfbeschwerden.",
+      "Osteopathie in der Naturheilpraxis Mustermann in Köln: rein manuelle, ganzheitliche Diagnostik und Behandlung von Gelenk-, Rücken- und Kopfbeschwerden.",
     heroImage: "/images/osteo_1.jpg",
-    heroImageAlt: "Osteopathie-Behandlung in der Naturheilpraxis Meschede in Köln",
+    heroImageAlt: "Osteopathie-Behandlung in der Naturheilpraxis Mustermann in Köln",
     intro:
       "Die Osteopathie wurde Ende des 19. Jahrhunderts von Dr. Andrew Taylor Still begründet. Sein Leitgedanke begleitet mich bis heute: „Ich glaube, die menschliche Maschine ist Gottes Apotheke.“ Osteopathie arbeitet ausschließlich mit den Händen – ohne Geräte, ohne Medikamente.",
     sections: [
@@ -197,7 +197,7 @@ export const schwerpunkte: Schwerpunkt[] = [
     navLabel: "Raucherentwöhnung",
     title: "Natürliche Raucherentwöhnung in Köln",
     metaDescription:
-      "Rauchfrei werden mit Laserakupunktur in der Naturheilpraxis Meschede in Köln – schmerzfrei, ohne Gewichtszunahme, in nur einer Sitzung.",
+      "Rauchfrei werden mit Laserakupunktur in der Naturheilpraxis Mustermann in Köln – schmerzfrei, ohne Gewichtszunahme, in nur einer Sitzung.",
     heroImage: "/images/raucher_hero.jpg",
     heroImageAlt: "Natürliche Raucherentwöhnung mit Laserakupunktur in Köln",
     intro:
@@ -252,7 +252,7 @@ export const schwerpunkte: Schwerpunkt[] = [
     navLabel: "Hilfe beim Abnehmen",
     title: "Hilfe beim Abnehmen in Köln",
     metaDescription:
-      "Gewichtsabnahme durch Laserakupunktur in der Naturheilpraxis Meschede in Köln – natürlich, schmerzfrei und ohne Nebenwirkungen.",
+      "Gewichtsabnahme durch Laserakupunktur in der Naturheilpraxis Mustermann in Köln – natürlich, schmerzfrei und ohne Nebenwirkungen.",
     heroImage: "/images/abnehmen_hero.jpg",
     heroImageAlt: "Hilfe beim Abnehmen durch Laserakupunktur in Köln",
     intro:
@@ -296,7 +296,7 @@ export const schwerpunkte: Schwerpunkt[] = [
     navLabel: "Beckenbodentraining",
     title: "BeckenBodenBoosta – Beckenbodentraining in Köln & Hürth",
     metaDescription:
-      "BeckenBodenBoosta in der Naturheilpraxis Meschede: modernstes elektromagnetisches Beckenbodentraining ohne Ausziehen und ohne Mitmachen.",
+      "BeckenBodenBoosta in der Naturheilpraxis Mustermann: modernstes elektromagnetisches Beckenbodentraining ohne Ausziehen und ohne Mitmachen.",
     heroImage: "/images/becken_2.jpg",
     heroImageAlt: "BeckenBodenBoosta Beckenbodentraining in Köln und Hürth",
     intro:
@@ -397,9 +397,9 @@ export const schwerpunkte: Schwerpunkt[] = [
       {
         heading: "Studien, Bericht und Praxisvideo",
         paragraphs: [
-          "Wissenschaftliche Studien zum Beckenbodentraining mit Magnetfeldtherapie finden Sie unter https://naturheilpraxis-meschede.de/content/studien-zum-beckenbodentraining-mit-der-magnetfeldtherapie-pelvipower.",
+          "Wissenschaftliche Studien zum Beckenbodentraining mit Magnetfeldtherapie finden Sie unter https://naturheilpraxis-mustermann.de/content/studien-zum-beckenbodentraining-mit-der-magnetfeldtherapie-pelvipower.",
           "Das Deutsche Ärzteblatt hat unter dem Titel „Harninkontinenz: Muskeltraining im Magnetfeld“ über Magnetfeldtherapie bei Harninkontinenz berichtet: https://www.aerzteblatt.de/archiv/36817/Harninkontinenz-Muskeltraining-im-Magnetfeld.",
-          "Das Praxisvideo ist unter https://www.youtube-nocookie.com/embed/f9I6IyZxoGQ erreichbar.",
+          "Ein Praxisvideo wird in Kürze an dieser Stelle verlinkt.",
         ],
       },
       {
@@ -407,7 +407,7 @@ export const schwerpunkte: Schwerpunkt[] = [
         paragraphs: [
           "Beim ersten kostenlosen Termin folgt nach einem individuellen Anamnesegespräch in der Regel direkt die Probesitzung. Sie nehmen 30 Minuten auf dem PelviPower-Spezialstuhl Platz und bleiben dabei vollständig bekleidet.",
           "Ab dem zweiten Termin können viele Patient:innen ihre individuelle Behandlung nach kurzer Einweisung eigenständig starten und durchführen. Wenn Sie darüber hinaus Unterstützung wünschen, begleite ich Sie selbstverständlich weiter.",
-          "Für Fragen vorab können Sie das Kontaktformular nutzen, eine Telefonnummer hinterlassen oder per WhatsApp an 015566835501 schreiben.",
+          "Für Fragen vorab können Sie das Kontaktformular nutzen, eine Telefonnummer hinterlassen oder per WhatsApp an 0123456789 schreiben.",
         ],
       },
     ],

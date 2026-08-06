@@ -63,8 +63,8 @@ export default function HomePage() {
               <span className="hidden sm:inline"> in der</span>
             </span>
             <span className="block sm:hidden">in der Naturheilpraxis</span>
-            <span className="block sm:hidden">Meschede</span>
-            <span className="hidden sm:block">Naturheilpraxis Meschede</span>
+            <span className="block sm:hidden">Mustermann</span>
+            <span className="hidden sm:block">Naturheilpraxis Mustermann</span>
           </h1>
           <p className="mt-5 max-w-xl text-base leading-7 text-primary-100 sm:mt-6 sm:max-w-2xl sm:text-lg sm:leading-relaxed">
             <span className="sm:hidden">
@@ -120,7 +120,7 @@ export default function HomePage() {
           <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
             <Image
               src="/images/blutegel_2.jpg"
-              alt="Blutegeltherapie in der Naturheilpraxis Meschede"
+              alt="Blutegeltherapie in der Naturheilpraxis Mustermann"
               fill
               sizes="(min-width: 640px) 50vw, 100vw"
               className="object-cover transition duration-500 group-hover:scale-105"
@@ -133,7 +133,7 @@ export default function HomePage() {
           <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl">
             <Image
               src="/images/laser_1.jpg"
-              alt="Laserakupunktur in der Naturheilpraxis Meschede"
+              alt="Laserakupunktur in der Naturheilpraxis Mustermann"
               fill
               sizes="(min-width: 640px) 50vw, 100vw"
               className="object-cover transition duration-500 group-hover:scale-105"
@@ -152,7 +152,7 @@ export default function HomePage() {
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
             <Image
               src="/images/osteo_2.jpg"
-              alt="Behandlung in der Naturheilpraxis Meschede in Köln"
+              alt="Behandlung in der Naturheilpraxis Mustermann in Köln"
               fill
               sizes="(min-width: 1024px) 45vw, 100vw"
               className="object-cover"
@@ -163,7 +163,7 @@ export default function HomePage() {
               Über die Praxis
             </p>
             <h2 className="mt-2 font-serif-heading text-3xl font-semibold text-primary-800">
-              Michael Meschede – Heilpraktiker in Köln
+              Max Mustermann – Heilpraktiker in Köln
             </h2>
             <p className="mt-4 text-primary-700">
               Als Heilpraktiker in eigener Praxis mitten in Köln habe ich mich auf die
@@ -310,7 +310,7 @@ export default function HomePage() {
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl lg:aspect-auto">
             <Image
               src="/images/laser_2.jpg"
-              alt="Beratungsgespräch in der Naturheilpraxis Meschede"
+              alt="Beratungsgespräch in der Naturheilpraxis Mustermann"
               fill
               sizes="(min-width: 1024px) 45vw, 100vw"
               className="object-cover"
@@ -335,14 +335,11 @@ export default function HomePage() {
               über Doctolib oder per E-Mail.
             </p>
           </div>
-          <div className="mt-8 aspect-video overflow-hidden rounded-2xl border border-primary-100 bg-white shadow-sm">
-            <iframe
-              src="https://www.youtube.com/embed/gPEfYurrztg"
-              title="Naturheilpraxis Meschede Köln"
-              className="h-full w-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            />
+          <div className="mt-8 flex aspect-video flex-col items-center justify-center gap-3 rounded-2xl border border-primary-100 bg-primary-100/60 text-primary-400 shadow-sm">
+            <svg viewBox="0 0 24 24" className="h-14 w-14" fill="currentColor">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+            <span className="text-sm font-semibold">Videoplatzhalter</span>
           </div>
         </div>
       </section>
@@ -360,7 +357,7 @@ export default function HomePage() {
               So finden Sie uns
             </p>
             <h2 className="mt-2 font-serif-heading text-3xl font-semibold text-primary-800">
-              Naturheilpraxis Meschede in der Kölner Innenstadt
+              Naturheilpraxis Mustermann in der Kölner Innenstadt
             </h2>
             <div className="mt-6 space-y-4 text-primary-700">
               <p>

@@ -119,25 +119,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mx-auto max-w-7xl px-4 pb-4 text-[11px] text-primary-400 sm:px-6 lg:px-8">
-          Hero-Illustration basiert auf einem Foto von Thomas Wolf,{" "}
-          <a
-            href="https://commons.wikimedia.org/wiki/File:Hohenzollernbr%C3%BCcke_K%C3%B6ln.jpg"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-primary-200"
-          >
-            www.foto-tw.de
-          </a>
-          , Lizenz{" "}
-          <a
-            href="https://creativecommons.org/licenses/by-sa/3.0/deed.de"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-primary-200"
-          >
-            CC BY-SA 3.0
-          </a>
-          .
+          Platzhalterbilder auf dieser Seite dienen nur zu Testzwecken.
         </div>
       </div>
     </footer>
