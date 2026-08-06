@@ -124,8 +124,38 @@ export default function ImpressumPage() {
             Bildnachweise
           </h2>
           <p className="mt-3">
-            Ausgewählte Bilder: Platzhalterbilder (Picsum Photos), nur zu Testzwecken.
+            Diese Testseite verwendet frei lizenzierte Fotografien (Creative Commons
+            BY / BY-SA / CC0 / Public Domain) verschiedener Fotograf:innen, gefunden über{" "}
+            <a href="https://openverse.org" target="_blank" rel="noopener noreferrer" className="underline hover:text-accent-600">
+              openverse.org
+            </a>
+            . Sie zeigen keine reale Person, Praxis oder Örtlichkeit im Zusammenhang mit
+            dieser (fiktiven) Website.
           </p>
+          <ul className="mt-4 space-y-1.5 text-sm text-primary-600">
+            <li>&bdquo;Asian medicinal leech (Hirudo nipponia)&ldquo; – Nature.Catcher (CC BY-SA)</li>
+            <li>&bdquo;European Medicinal Leech&ldquo; – ajott (CC BY)</li>
+            <li>&bdquo;North American Medicinal Leech, Bar Harbor&ldquo; – Wes Gapp (CC BY)</li>
+            <li>&bdquo;North American Medicinal Leech, Tolland&ldquo; – Kristiina Hurme (CC BY)</li>
+            <li>&bdquo;Laser therapy on a knee used to treat pain&ldquo; – Shixart1985 (CC BY)</li>
+            <li>&bdquo;Facial laser therapy&ldquo; – Kolobetsoo (CC BY-SA)</li>
+            <li>&bdquo;Acupuncture Needles&ldquo; – Acuhealth (CC BY-SA)</li>
+            <li>&bdquo;Inserting acupuncture needles&ldquo; / &bdquo;Patient with acupuncture moxibustion&ldquo; – Wonderlane (CC BY)</li>
+            <li>&bdquo;Warring States Gold Acupuncture Needles&ldquo; – Gary Lee Todd, Ph.D. (CC0)</li>
+            <li>&bdquo;Acupuncture Needles&ldquo; – elyob (CC BY-SA)</li>
+            <li>&bdquo;Acupuncture&ldquo; – gemeinfrei (Public Domain)</li>
+            <li>&bdquo;Chiropractic spinal adjustment&ldquo; – Michael Dorausch (CC BY-SA)</li>
+            <li>&bdquo;My dad&apos;s adjusting table&ldquo; – skyfaller (CC BY-SA)</li>
+            <li>&bdquo;British School of Osteopathy&ldquo; – Mark Morgan Trinidad B (CC BY)</li>
+            <li>&bdquo;She Quit Smoking&ldquo; – cogdogblog (CC BY)</li>
+            <li>&bdquo;&apos;fit for life&apos; bento&ldquo; – gamene (CC BY)</li>
+            <li>&bdquo;Physiotherapy room of Clinic of KarRC 2009&ldquo; – Igor Georgievskiy (CC BY-SA)</li>
+            <li>&bdquo;Sauna Hotel Arthurissa&ldquo; – Hotel Arthur Helsinki (CC BY)</li>
+            <li>&bdquo;Spa therapy&ldquo; – faithchad (CC BY-SA)</li>
+            <li>&bdquo;Spa treatment room portrait&ldquo; – bloggeratlarge (CC0)</li>
+            <li>&bdquo;A restful, well-lighted space&ldquo; – woodleywonderworks (CC BY)</li>
+            <li>&bdquo;Cologne Cathedral and the Hohenzollern Bridge&ldquo; – jiuguangw (CC BY-SA)</li>
+          </ul>
         </div>
       </section>
     </>
