@@ -399,7 +399,7 @@ export const schwerpunkte: Schwerpunkt[] = [
         paragraphs: [
           "Wissenschaftliche Studien zum Beckenbodentraining mit Magnetfeldtherapie finden Sie unter https://naturheilpraxis-mustermann.de/content/studien-zum-beckenbodentraining-mit-der-magnetfeldtherapie-pelvipower.",
           "Das Deutsche Ärzteblatt hat unter dem Titel „Harninkontinenz: Muskeltraining im Magnetfeld“ über Magnetfeldtherapie bei Harninkontinenz berichtet: https://www.aerzteblatt.de/archiv/36817/Harninkontinenz-Muskeltraining-im-Magnetfeld.",
-          "Ein Praxisvideo wird in Kürze an dieser Stelle verlinkt.",
+          "Ein kurzes Praxisvideo finden Sie weiter unten auf dieser Seite.",
         ],
       },
       {

@@ -80,11 +80,16 @@ export default async function SchwerpunktPage({
 
           {data.slug === "beckenbodentraining" && (
             <div className="space-y-6">
-              <div className="flex aspect-video flex-col items-center justify-center gap-3 rounded-2xl border border-primary-100 bg-primary-100/60 text-primary-400 shadow-sm">
-                <svg viewBox="0 0 24 24" className="h-14 w-14" fill="currentColor">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-                <span className="text-sm font-semibold">Videoplatzhalter</span>
+              <div className="aspect-video overflow-hidden rounded-2xl border border-primary-100 bg-white shadow-sm">
+                <video
+                  src="/videos/beckenbodenboosta.mp4"
+                  className="h-full w-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  controls
+                />
               </div>
               <a
                 href="#"
