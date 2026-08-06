@@ -327,7 +327,7 @@ export default function HomePage() {
               Praxisfilm
             </p>
             <h2 className="mt-2 font-serif-heading text-3xl font-semibold text-primary-800">
-              So finden Sie den Weg in die Naturheilpraxis Köln
+              So finden Sie den Weg in die Naturheilpraxis Mustermann in Köln
             </h2>
             <p className="mt-4 text-primary-700">
               Termine zur Schmerztherapie, Raucherentwöhnung und weiteren Behandlungen
